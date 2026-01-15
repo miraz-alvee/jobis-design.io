@@ -1,12 +1,16 @@
 'use client';
 
+import Awards from '@/components/profile/Awards/Awards';
 import Education from '@/components/profile/Education/Education';
 import Experience from '@/components/profile/Experience/Experience';
+import Featured from '@/components/profile/Featured/Featured';
 import Languages from '@/components/profile/Languages/Languages';
 import PersonalInfo from '@/components/profile/PersonalInfo/PersonalInfo';
+import Projects from '@/components/profile/Projects/Projects';
 import References from '@/components/profile/References/References';
 import Skills from '@/components/profile/Skills/Skills';
 import Training from '@/components/profile/Training/Training';
+import Voluntary from '@/components/profile/Voluntary/Voluntary';
 import { useState } from 'react';
 
 type TabType = 
@@ -36,11 +40,11 @@ const tabs: Tab[] = [
   { id: 'skills', label: 'Skills', icon: '⚡', count: 4 },
   { id: 'languages', label: 'Languages', icon: '🌐', count: 2 },
   { id: 'training', label: 'Training', icon: '📚', count: 1 },
-  { id: 'references', label: 'References', icon: '🌐', count: 2 },
   { id: 'projects', label: 'Projects', icon: '📁', count: 2 },
   { id: 'voluntary', label: 'Voluntary', icon: '❤️', count: 1 },
   { id: 'awards', label: 'Awards', icon: '🏆', count: 1 },
   { id: 'featured', label: 'Featured', icon: '⭐' },
+  { id: 'references', label: 'References', icon: '🌐', count: 2 },
 ];
 
 export default function ProfilePage() {
@@ -60,6 +64,14 @@ export default function ProfilePage() {
         return <Languages />;
       case 'training':
         return <Training />;
+      case 'projects':
+        return <Projects />;
+      case 'voluntary':
+        return <Voluntary />;
+      case 'awards':
+        return <Awards />;
+      case 'featured':
+        return <Featured />;
       case 'references':
         return <References />;
     

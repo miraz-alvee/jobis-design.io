@@ -18,10 +18,8 @@ import {
 import { Checkbox } from "@/components/ui/checkbox"
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Separator } from "@/components/ui/separator"
 import { Textarea } from "@/components/ui/textarea"
 
 
@@ -30,7 +28,7 @@ export default function AddTraining() {
         <div>
             <DialogContent className="sm:max-w-3xl max-h-[90vh] flex flex-col">
                 <DialogHeader>
-                    <DialogTitle className='text-xl'>Add Education</DialogTitle>
+                    <DialogTitle className='text-xl'>Add Training</DialogTitle>
                 </DialogHeader>
 
 
